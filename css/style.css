@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif !important;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafcfc;
+    height: 100vh;
+    overflow: hidden;
+}
+
+p {
+	color: #666666;
+	font-size: 18px;
+	line-height: 38px;
+}
+
+/**
+ *  Container
+ */
+ .el-container {
+    background-color: #fafcfc;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+}
+
+.el-main {
+    padding: 0;
+}
+
+/**
+ *  Header
+ */
+.el-header {
+    height: 130px !important;
+    padding: 20px;
+}
+
+.el-header--brand {
+    height: 90px;
+}
+
+.el-header--brand--image {
+    height: 100%;
+}
+
+.el-header--cta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.el-header--cta span {
+    color: #333333;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.el-header--cta a {
+    font-weight: 500;
+    color: #333333;
+    font-size: 24px;
+    line-height: 30px;
+    border-bottom: 3px solid #333333;
+}
+
+.el-header--cta a:hover {
+    text-decoration: none;
+}
+
+/**
+ *  Section
+ */
+.el-section-title {
+    font-size: 2.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.el-experience {
+    background-color: #111111;
+    color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/**
+ *  Welcome
+ */
+.el-carousel-text {
+    width: 45%;
+    height: 200px;
+    display: block;
+    z-index: 100;
+    position: absolute;
+    z-index: 100;
+    margin-top: 150px;
+}
+.el-carousel-text h1 {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 75px;
+    text-shadow: 0 2px 4px 0 #333333;
+}
+
+.el-carousel-text p {
+	color: #FFFFFF;
+	font-size: 30px;
+	line-height: 45px;
+	text-shadow: 0 2px 4px 0 #333333;
+}
+
+.el-carousel-text .el-button--white {
+    height: 60px;
+    width: 391px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(51,51,51,0.5);
+    padding: 18px 42px;
+    color: #333333;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+/**
+ *  Schedule Meeting Card
+ */
+.ib-schedule-meeting__container {
+    margin-top: -100px;
+    margin-bottom: 100px;
+    z-index: 99;
+ }
+
+.ib-schedule-meeting {
+    height: 200px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 40px 0 rgba(51,51,51,0.15) !important;
+}
+
+.ib-schedule-meeting .el-card__body {
+    height: 100%;
+    padding: 50px 100px;
+}
+
+
+.ib-schedule-meeting p {
+    line-height: 30px;
+}
+
+.ib-schedule-meeting .el-icon-date {
+    font-size: 120px;
+    display: inline-block;
+    margin-right: 60px;
+    color: #00000026;
+}
+
+.ib-schedule-meeting button {
+    display: inline-block;
+    height: 50px;
+    width: 250px;
+    border-radius: 2px;
+    background-color: #333333;
+    box-shadow: 0 2px 10px 0 rgba(51,51,51,0.2);
+    margin-top: 20px;
+    border-color: #333333
+}
+
+.ib-schedule-meeting button:hover {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+
+/**
+ *  About me
+ */
+.el-about-title {
+	color: #333333;
+	font-size: 49px;
+	line-height: 78px;
+}
+
+
+/**
+ *  Experience
+ */
+.el-experience-section-title {
+    margin-bottom: 50px;
+}
+
+.el-experience-item {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.el-experience-title {
+    font-size: 1.4rem;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.el-experience-details {
+    display: flow-root;
+}
+
+.el-experience-details dt {
+    float: left;
+    width: 60%;
+    text-align: left;
+    padding: .25em .25em 1em 0;
+    clear: left;
+    color: #666666;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.el-experience-details__one dt {
+    width: 40%;
+    padding: .25em .25em .25em 0;
+}
+
+.el-experience-details dd {
+    float: left;
+    width: 20%;
+    padding: .25em 0 1em;
+    color: #666666;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.el-experience-details__one dd {
+    width: 60%;
+    padding: .25em 0;
+    text-align: left;
+}
+
+.el-experience-details dl::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.el-experience-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.el-experience-list li {
+    margin: 10px 0;
+    color: #666666;
+}
+
+/**
+ *  Footer
+ */
+ .el-footer {
+    background-color: #FFFFFF;
+    height: 100px !important;
+    padding: 20px;
+}
+
+.el-footer--brand {
+    height: 60px;
+}
+
+.el-footer--brand--image {
+    height: 100%;
+}
+
+.el-footer--cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.el-footer--cta a {
+    font-weight: 500;
+    color: #333333;
+    font-size: 24px;
+    line-height: 30px;
+    border-bottom: 3px solid #333333;
+}
+
+.el-footer--cta a:hover {
+    text-decoration: none;
+}
+
+.el-footer--social-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+.el-footer--social-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.el-footer--social-list li a {
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 8px 10px;
+    color: #ffffff;
+    font-size: 12px;
+}
