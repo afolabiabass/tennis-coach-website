@@ -45,18 +45,22 @@
         <el-container>
             <el-header>
                 <el-row type="flex" align="center" justify="center">
-                    <el-col :span="10" class="el-header--brand">
-                        <a href="/">
-                            <el-image
-                                    src="img/ib.svg"
-                                    class="el-header--brand--image"
-                                    fit="contain">
-                            </el-image>
-                        </a>
-                    </el-col>
-                    <el-col :span="10" class="el-header--cta">
-                        <span>Send me an email - &nbsp;</span>
-                        <a href="mailto:me@ibrahimbalogun.com">me@ibrahimbalogun.com</a>
+                    <el-col :xs="22" :md="20">
+                        <el-row type="flex" align="center" justify="center">
+                            <el-col :span="12" class="el-header--brand">
+                                <a href="/">
+                                    <el-image
+                                            src="img/ib.svg"
+                                            class="el-header--brand--image"
+                                            fit="contain">
+                                    </el-image>
+                                </a>
+                            </el-col>
+                            <el-col :span="12" class="el-header--cta">
+                                <span>Send me an email - &nbsp;</span>
+                                <a href="mailto:me@ibrahimbalogun.com">me@ibrahimbalogun.com</a>
+                            </el-col>
+                        </el-row>
                     </el-col>
                 </el-row>
             </el-header>
@@ -64,39 +68,35 @@
                 <el-carousel
                     indicator-position="none"
                     arrow="never"
+                    class="el-carousel-welcome"
                     height="750px">
                     <el-carousel-item
                         v-for="item in 1" :key="item">
                         <el-row type="flex" align="center" justify="center">
-                            <el-col :span="20">
+                            <el-col :xs="24" :span="20">
                                 <div class="el-carousel-text">
                                     <h1>Experienced Tennis Coach</h1>
                                     <p>I’m a Tennis coach passionate about this sport and ready to teach you to be a  professional tennis player or just teach you to play for fun!</p>
-                                    <el-button type="white">Call Me - +234 812 916 3673</el-button>
+                                    <el-button type="white">Call Me <span class="el-carousel-text--btn__number">- +234 812 916 3673</span></el-button>
                                 </div>
                             </el-col>
                         </el-row>
                         <el-image
                             src="img/bg.jpg"
                             fit="contain">
-                    </el-image>
-                        <div class="el-carousel-text">
-                            <h1>Experiences Tennis Coach</h1>
-                            <p>I’m a Tennis coach passionate about this sport and ready to teach you to be a  professional tennis player or just teach you to play for fun!</p>
-                            <el-button type="primary">Call Me - +234 812 916 3673</el-button>
-                        </div>
+                        </el-image>
                     </el-carousel-item>
                 </el-carousel>
                 <el-row class="ib-schedule-meeting__container" type="flex" align="center" justify="center">
-                    <el-col :span="20">
+                    <el-col :xs="22" :span="20">
                         <el-card class="ib-schedule-meeting">
                             <el-row>
-                                <el-col :span="12">
+                                <el-col :xs="24" :span="12">
                                     <h2>Prefer to schedule a meeting?</h2>
                                     <p>You can book a meeting with me, select a date and time that works for you.</p>
                                 </el-col>
-                                <el-col :span="12">
-                                    <div class="d-flex align-items-center justify-content-center">
+                                <el-col :xs="24" :span="12">
+                                    <div class="ib-btn-container d-flex align-items-center justify-content-center justify-content-sm-start">
                                         <el-icon class="el-icon-date"></el-icon>
                                         <div>
                                             <h5>Start Training Today!</h4>
@@ -109,7 +109,13 @@
                     </el-col>
                 </el-row>
                 <el-row>
-                    <el-col :span="16">
+                    <el-col :xs="24" class="ib-introduction-xs">
+                        <el-image
+                                src="img/ib.jpg"
+                                fit="contain">
+                        </el-image>
+                    </el-col>
+                    <el-col :xs="24" :span="16">
                         <el-row type="flex" align="center" justify="center">
                             <el-col :span="18">
                                 <h4 class="el-about-title">Hello! I’m Ibrahim Babatunde Balogun, a Tennis Coach, sports  lover and enthusiast.</h4>
@@ -118,30 +124,34 @@
                         <el-row type="flex" align="center" justify="center">
                             <el-col :span="18">
                                 <el-row :gutter="40">
-                                    <el-col :span="12">
-                                        <p>I found my passion for Tennis while working as a ballboy at the well-renowned Ikoyi Club in Lagos state in 2003. By 2006 I had earned the award of Ball Boy Champion.
-                                                In 2012, I Started working as a tennis coach in Greensprings school in Laogos State after years of training as an athelete and coach. In 2017, I moved on to the Lagos preparatory school in ikoyi, Lagos state.
-                                                I joined the Luik Tennis and Recreation center as the Head coach, training any level of age from 3years - 70years.
-                                                My duties also included training the club members and designing tennis programs that were tailored to my different types of clients and their work schedules, while supervising and monitoring their growth and improvements.</p>
+                                    <el-col :xs="24" :span="12">
+                                        <p>
+                                            I found my passion for Tennis while working as a ballboy at the well-renowned Ikoyi Club in Lagos state in 2003. By 2006 I had earned the award of Ball Boy Champion.
+                                            <br>
+                                            In 2012, I Started working as a tennis coach in Greensprings school in Laogos State after years of training as an athelete and coach. In 2017, I moved on to the Lagos preparatory school in ikoyi, Lagos state.
+                                            I joined the Luik Tennis and Recreation center as the Head coach, training any level of age from 3years - 70years.
+                                            My duties also included training the club members and designing tennis programs that were tailored to my different types of clients and their work schedules, while supervising and monitoring their growth and improvements.
+                                        </p>
                                     </el-col>
-                                    <el-col :span="12">
-                                        <p>I found my passion for Tennis while working as a ballboy at the well-renowned Ikoyi Club in Lagos state in 2003. By 2006 I had earned the award of Ball Boy Champion.
-                                                In 2012, I Started working as a tennis coach in Greensprings school in Laogos State after years of training as an athelete and coach. In 2017, I moved on to the Lagos preparatory school in ikoyi, Lagos state.
-                                                I joined the Luik Tennis and Recreation center as the Head coach, training any level of age from 3years - 70years.
-                                                My duties also included training the club members and designing tennis programs that were tailored to my different types of clients and their work schedules, while supervising and monitoring their growth and improvements.</p>
+                                    <el-col :xs="24" :span="12">
+                                        <p>
+                                            Currently, I train the ball hitters for national tournaments, while still actively playing in tournaments as well.  Recently, I played in the CBN senior tournament held in Abuja as well as the Rainoil Tennis Nationals while also coaching the LUIK team in last year’s NCC league senior tournament.
+
+                                            I'm a national player who loves to teach and train others to not only become world class Tennis players but also build their passion for this sport. I am on a mission to contribute to the growth of tennis, be a productive team player and share my passion for the game through coaching and mentoring others interested.
+                                        </p>
                                     </el-col>
                                 </el-row>
                             </el-col>
                         </el-row>
                     </el-col>
-                    <el-col :span="8">
+                    <el-col :span="8" class="ib-introduction-sm">
                         <el-image
                                 src="img/ib.jpg"
                                 fit="contain">
                         </el-image>
                     </el-col>
                 </el-row>
-                <el-row>
+                <!-- <el-row>
                     <el-col :span="16">
                         <el-row type="flex" align="center" justify="center">
                             <el-col :span="18">
@@ -150,7 +160,7 @@
                         </el-row>
 
                     </el-col>
-                </el-row>
+                </el-row> -->
                 <el-row class="el-experience">
                     <el-col :span="24">
                         <el-row type="flex" align="center" justify="center">
@@ -160,69 +170,73 @@
                         </el-row>
 
                         <el-row type="flex" align="center" justify="center">
-                            <el-col :span="8">
-                                <div class="el-experience-item">
-                                    <h6 class="el-experience-title">Bio Data</h6>
-                                    <dl class="el-experience-details el-experience-details__one">
-                                        <dt>Gender:</dt>
-                                        <dd>Male</dd>
-                                        <dt>Date of Birth:</dt>
-                                        <dd>4th May</dd>
-                                        <dt>Marital Status:</dt>
-                                        <dd>Married</dd>
-                                        <dt>State of Origin:</dt>
-                                        <dd>Lagos State</dd>
-                                        <dt>Resident:</dt>
-                                        <dd>Nigeria</dd>
-                                        <dt>Nationality:</dt>
-                                        <dd>Nigerian</dd>
-                                    </dl>
-                                </div>
-                                <div class="el-experience-item">
-                                    <h6 class="el-experience-title">Skills</h6>
-                                    <ul class="el-experience-list">
-                                        <li>Play ’n Stay (Mini T)</li>
-                                        <li>School Tennis Initiative (STI)</li>
-                                        <li>High Performance Tennis Training</li>
-                                        <li>Recreational Players Training</li>
-                                    </ul>
-                                </div>
-                                <div class="el-experience-item">
-                                    <h6 class="el-experience-title">Travel Experience</h6>
-                                    <p>Turkey, Dubai, Ghana, Togo, Republic du Benin</p>
-                                </div>
-                            </el-col>
-                            <el-col :span="12">
-                                <div class="el-experience-item">
-                                    <h6 class="el-experience-title">Educational Qualification</h6>
-                                    <dl class="el-experience-details">
-                                        <dt>Army Children School, Obalende, Lagos (FSLC)</dt>
-                                        <dd>1992 - 1999</dd>
-                                        <dt>Ireti Grammar School, Ikoyi, Lagos (SSCE)</dt>
-                                        <dd>2006 - 2006</dd>
-                                    </dl>
-                                </div>
-                                <div class="el-experience-item">
-                                    <h6 class="el-experience-title">Certification</h6>
-                                    <dl class="el-experience-details">
-                                        <dt><sup>*</sup>Professionl Tennis Registry Adult development 2013 (PTR) coaching course</dt>
-                                        <dd>2013</dd>
-                                        <dt><sup>*</sup>Professional tennis coaches association of Nigeria workshop</dt>
-                                        <dd>2014</dd>
-                                        <dt><sup>*</sup>ITF worldwide coaches conference (Antalya, Turkey)</dt>
-                                        <dd>2015</dd>
-                                        <dt><sup>*</sup>ITF/NTF level 1 (2017) coaching course</dt>
-                                        <dd>2017</dd>
-                                        <dt><sup>*</sup>AJ Tennis academy workshop</dt>
-                                        <dd>2017</dd>
-                                        <dt><sup>*</sup>Professional Tennis Registry for 3 - 10 years old and 11 - 17 years ages (PTR) coaching course</dt>
-                                        <dd>2019</dd>
-                                        <dt><sup>*</sup>ITF worldwide coaches conference (Bangkok, Thailand)</dt>
-                                        <dd>2019</dd>
-                                        <dt><sup>*</sup>Professional Tennis Registry performance (Phuket, Thailand)</dt>
-                                        <dd>2019</dd>
-                                    </dl>
-                                </div>
+                            <el-col :span="20">
+                                <el-row>
+                                    <el-col :xs="24" :span="8">
+                                        <div class="el-experience-item">
+                                            <h6 class="el-experience-title">Bio Data</h6>
+                                            <dl class="el-experience-details el-experience-details__one">
+                                                <dt>Gender:</dt>
+                                                <dd>Male</dd>
+                                                <dt>Date of Birth:</dt>
+                                                <dd>4th May</dd>
+                                                <dt>Marital Status:</dt>
+                                                <dd>Married</dd>
+                                                <dt>State of Origin:</dt>
+                                                <dd>Lagos State</dd>
+                                                <dt>Resident:</dt>
+                                                <dd>Nigeria</dd>
+                                                <dt>Nationality:</dt>
+                                                <dd>Nigerian</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el-experience-item">
+                                            <h6 class="el-experience-title">Skills</h6>
+                                            <ul class="el-experience-list">
+                                                <li>Play ’n Stay (Mini T)</li>
+                                                <li>School Tennis Initiative (STI)</li>
+                                                <li>High Performance Tennis Training</li>
+                                                <li>Recreational Players Training</li>
+                                            </ul>
+                                        </div>
+                                        <div class="el-experience-item">
+                                            <h6 class="el-experience-title">Travel Experience</h6>
+                                            <p>Turkey, Dubai, Ghana, Togo, Republic du Benin</p>
+                                        </div>
+                                    </el-col>
+                                    <el-col :xs="24" :span="12">
+                                        <div class="el-experience-item">
+                                            <h6 class="el-experience-title">Educational Qualification</h6>
+                                            <dl class="el-experience-details">
+                                                <dt>Army Children School, Obalende, Lagos (FSLC)</dt>
+                                                <dd>1992 - 1999</dd>
+                                                <dt>Ireti Grammar School, Ikoyi, Lagos (SSCE)</dt>
+                                                <dd>2006 - 2006</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el-experience-item">
+                                            <h6 class="el-experience-title">Certification</h6>
+                                            <dl class="el-experience-details">
+                                                <dt><sup>*</sup>Professionl Tennis Registry Adult development 2013 (PTR) coaching course</dt>
+                                                <dd>2013</dd>
+                                                <dt><sup>*</sup>Professional tennis coaches association of Nigeria workshop</dt>
+                                                <dd>2014</dd>
+                                                <dt><sup>*</sup>ITF worldwide coaches conference (Antalya, Turkey)</dt>
+                                                <dd>2015</dd>
+                                                <dt><sup>*</sup>ITF/NTF level 1 (2017) coaching course</dt>
+                                                <dd>2017</dd>
+                                                <dt><sup>*</sup>AJ Tennis academy workshop</dt>
+                                                <dd>2017</dd>
+                                                <dt><sup>*</sup>Professional Tennis Registry for 3 - 10 years old and 11 - 17 years ages (PTR) coaching course</dt>
+                                                <dd>2019</dd>
+                                                <dt><sup>*</sup>ITF worldwide coaches conference (Bangkok, Thailand)</dt>
+                                                <dd>2019</dd>
+                                                <dt><sup>*</sup>Professional Tennis Registry performance (Phuket, Thailand)</dt>
+                                                <dd>2019</dd>
+                                            </dl>
+                                        </div>
+                                    </el-col>
+                                </el-row>
                             </el-col>
                         </el-row>
 
@@ -235,51 +249,54 @@
                         </el-row>
 
                         <el-row type="flex" align="center" justify="center">
-                            <el-col :span="10">
-                                <div class="el-experience-item">
-                                    <h6 class="el-experience-title">Professional Membership</h6>
-                                    <dl class="el-experience-details">
-                                        <dt>- Professional Tennis Registry (U.S PTR)</dt>
-                                        <dd>2013 - 2014</dd>
-                                        <dt>- Professional Tennis Coaches Association of Nigeria (PTCAN)</dt>
-                                        <dd>2014</dd>
-                                        <dt>- Nigerian Tennis Federation (NTF) and International Tennis Federation (ITF)</dt>
-                                        <dd>2017</dd>
-                                        <dt>- Professional Tennis Registry (PTR)</dt>
-                                        <dd>2019</dd>
-                                    </dl>
-                                </div>
-                                <div class="el-experience-item">
-                                    <h6 class="el-experience-title">Professional Certificates</h6>
-                                    <dl class="el-experience-details">
-                                        <dt>- U.S PTR - Instructor (Adult Development), Nigeria</dt>
-                                        <dd>2013 - 2014</dd>
-                                        <dt>- PTR - Instructor (3 - 10), Nigeria</dt>
-                                        <dd>2014</dd>
-                                        <dt>- PTR - Instructor (11 - 17), Nigeria</dt>
-                                        <dd>2017</dd>
-                                        <dt>- ITF Worldwide Coaches Conference Antalya, Turkey</dt>
-                                        <dd>2019</dd>
-                                        <dt>- PTCAN Coaches Workshop, Nigeria</dt>
-                                        <dd>2019</dd>
-                                        <dt>- Better Africa through Tennis Workshop AJ Tennis Academy, Nigeria</dt>
-                                        <dd>2019</dd>
-                                    </dl>
-                                </div>
-                            </el-col>
-                            <el-col :span="10">
-                                <el-image
-                                        src="img/tennis-ball.png"
-                                        fit="contain">
-                                </el-image>
+                            <el-col :span="20">
+                                <el-row>
+                                    <el-col :xs="24" :span="10">
+                                        <div class="el-experience-item">
+                                            <h6 class="el-experience-title">Professional Membership</h6>
+                                            <dl class="el-experience-details">
+                                                <dt>- Professional Tennis Registry (U.S PTR)</dt>
+                                                <dd>2013 - 2014</dd>
+                                                <dt>- Professional Tennis Coaches Association of Nigeria (PTCAN)</dt>
+                                                <dd>2014</dd>
+                                                <dt>- Nigerian Tennis Federation (NTF) and International Tennis Federation (ITF)</dt>
+                                                <dd>2017</dd>
+                                                <dt>- Professional Tennis Registry (PTR)</dt>
+                                                <dd>2019</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el-experience-item">
+                                            <h6 class="el-experience-title">Professional Certificates</h6>
+                                            <dl class="el-experience-details">
+                                                <dt>- U.S PTR - Instructor (Adult Development), Nigeria</dt>
+                                                <dd>2013 - 2014</dd>
+                                                <dt>- PTR - Instructor (3 - 10), Nigeria</dt>
+                                                <dd>2014</dd>
+                                                <dt>- PTR - Instructor (11 - 17), Nigeria</dt>
+                                                <dd>2017</dd>
+                                                <dt>- ITF Worldwide Coaches Conference Antalya, Turkey</dt>
+                                                <dd>2019</dd>
+                                                <dt>- PTCAN Coaches Workshop, Nigeria</dt>
+                                                <dd>2019</dd>
+                                                <dt>- Better Africa through Tennis Workshop AJ Tennis Academy, Nigeria</dt>
+                                                <dd>2019</dd>
+                                            </dl>
+                                        </div>
+                                    </el-col>
+                                    <el-col :xs="24" :span="10" class="ib-tennis-balls">
+                                        <el-image
+                                                src="img/tennis-ball.png"
+                                                fit="contain">
+                                        </el-image>
+                                    </el-col>
+                                </el-row>
                             </el-col>
                         </el-row>
-
                     </el-col>
                 </el-row>
                 <el-footer>
                     <el-row type="flex" align="center" justify="center">
-                        <el-col :span="6" class="el-footer--brand">
+                        <el-col :xs="12" :span="6" class="el-footer--brand">
                             <a href="/">
                                 <el-image
                                         src="img/ib.svg"
@@ -288,12 +305,12 @@
                                 </el-image>
                             </a>
                         </el-col>
-                        <el-col :span="8" class="el-footer--cta">
+                        <el-col :span="8" class="el-footer--cta hidden-xs-only">
                             <a href="mailto:me@ibrahimbalogun.com">me@ibrahimbalogun.com</a>
                         </el-col>
-                        <el-col :span="6" class="el-footer--social">
+                        <el-col :xs="12" :span="6" class="el-footer--social">
                             <el-row type="flex" align="middle" justify="end">
-                                <el-col :span="12">
+                                <el-col :span="24">
                                     <h6>Connect with me</h6>
                                     <ul class="el-footer--social-list">
                                         <li><a href="/"><i class="fab fa-twitter"></i></a></li>
