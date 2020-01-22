@@ -6,338 +6,380 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ibrahim Balogun</title>
     <!-- Search Engine -->
-    <meta name="description" content="I’m a Tennis coach passionate about this sport and ready to teach you to be a professional tennis player">
+    <meta name="description"
+          content="I’m a Tennis coach passionate about this sport and ready to teach you to be a professional tennis player">
     <meta name="image" content="www.ibrahimbalogun.com/opengraph.png">
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="Ibrahim Balogun">
-    <meta itemprop="description" content="I’m a Tennis coach passionate about this sport and ready to teach you to be a professional tennis player">
+    <meta itemprop="description"
+          content="I’m a Tennis coach passionate about this sport and ready to teach you to be a professional tennis player">
     <meta itemprop="image" content="www.ibrahimbalogun.com/opengraph.png">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Ibrahim Balogun">
-    <meta name="twitter:description" content="I’m a Tennis coach passionate about this sport and ready to teach you to be a professional tennis player">
+    <meta name="twitter:description"
+          content="I’m a Tennis coach passionate about this sport and ready to teach you to be a professional tennis player">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta name="og:title" content="Ibrahim Balogun">
-    <meta name="og:description" content="I’m a Tennis coach passionate about this sport and ready to teach you to be a professional tennis player">
+    <meta name="og:description"
+          content="I’m a Tennis coach passionate about this sport and ready to teach you to be a professional tennis player">
     <meta name="og:image" content="www.ibrahimbalogun.com/opengraph.png">
     <meta name="og:url" content="www.ibrahimbalogun.com">
     <meta name="og:site_name" content="Ibrahim Balogun">
     <meta name="og:type" content="website">
     <!--Favicon-->
-<!--    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">-->
-<!--    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">-->
-<!--    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">-->
-<!--    <link rel="manifest" href="img/favicons/manifest.json">-->
-<!--    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#a0830b">-->
+    <!--    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">-->
+    <!--    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">-->
+    <!--    <link rel="manifest" href="img/favicons/manifest.json">-->
+    <!--    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#a0830b">-->
     <meta name="theme-color" content="#ffffff">
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <noscript>
-        <strong>We're sorry but Ibrahim Balogun's website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app">
-        <el-container>
-            <el-header>
-                <el-row type="flex" align="center" justify="center">
-                    <el-col :xs="22" :md="20">
-                        <el-row type="flex" align="center" justify="center">
-                            <el-col :span="12" class="el-header--brand">
-                                <a href="/">
-                                    <el-image
-                                            src="img/ib.svg"
-                                            class="el-header--brand--image"
-                                            fit="contain">
-                                    </el-image>
-                                </a>
-                            </el-col>
-                            <el-col :span="12" class="el-header--cta">
-                                <span>Send me an email - &nbsp;</span>
-                                <a href="mailto:me@ibrahimbalogun.com">me@ibrahimbalogun.com</a>
-                            </el-col>
-                        </el-row>
-                    </el-col>
-                </el-row>
-            </el-header>
-            <el-main>
-                <el-carousel
-                    indicator-position="none"
-                    arrow="never"
-                    class="el-carousel-welcome"
-                    height="750px">
-                    <el-carousel-item
-                        v-for="item in 1" :key="item">
-                        <el-row type="flex" align="center" justify="center">
-                            <el-col :xs="24" :span="20">
-                                <div class="el-carousel-text">
-                                    <h1>Experienced Tennis Coach</h1>
-                                    <p>I’m a Tennis coach passionate about this sport and ready to teach you to be a professional tennis player or just teach you to play for fun!</p>
-                                    <el-button type="white">Call Me <span class="el-carousel-text--btn__number">- +234 812 916 3673</span></el-button>
-                                </div>
-                            </el-col>
-                        </el-row>
-                        <el-image
-                            src="img/bg.jpg"
-                            fit="contain">
-                        </el-image>
-                    </el-carousel-item>
-                </el-carousel>
-                <el-row class="ib-schedule-meeting__container" type="flex" align="center" justify="center">
-                    <el-col :xs="22" :span="20">
-                        <el-card class="ib-schedule-meeting">
-                            <el-row>
-                                <el-col :xs="24" :span="12">
-                                    <h2>Prefer to schedule a meeting?</h2>
-                                    <p>You can book a meeting with me, select a date and time that works for you.</p>
-                                </el-col>
-                                <el-col :xs="24" :span="12">
-                                    <div class="ib-btn-container d-flex align-items-center justify-content-center justify-content-sm-start">
-                                        <el-icon class="el-icon-date"></el-icon>
-                                        <div>
-                                            <h5>Start Training Today!</h4>
-                                            <el-button type="primary">Schedule a meeting</el-button>
-                                        </div>
-                                    </div>
-                                </el-col>
-                            </el-row>
-                        </el-card>
-                    </el-col>
-                </el-row>
-                <el-row>
-                    <el-col :xs="24" class="ib-introduction-xs">
-                        <el-image
-                                src="img/ib.jpg"
-                                fit="contain">
-                        </el-image>
-                    </el-col>
-                    <el-col :xs="24" :span="16">
-                        <el-row type="flex" align="center" justify="center">
-                            <el-col :span="18">
-                                <h4 class="el-about-title">Hello! I’m Ibrahim Babatunde Balogun, a Tennis Coach, sports  lover and enthusiast.</h4>
-                            </el-col>
-                        </el-row>
-                        <el-row type="flex" align="center" justify="center">
-                            <el-col :span="18">
-                                <el-row :gutter="40">
-                                    <el-col :xs="24" :span="12">
-                                        <p>
-                                            I found my passion for Tennis while working as a ballboy at the well-renowned Ikoyi Club in Lagos state in 2003. By 2006 I had earned the award of Ball Boy Champion.
-                                            <br>
-                                            In 2012, I Started working as a tennis coach in Greensprings school in Laogos State after years of training as an athelete and coach. In 2017, I moved on to the Lagos preparatory school in ikoyi, Lagos state.
-                                            I joined the Luik Tennis and Recreation center as the Head coach, training any level of age from 3years - 70years.
-                                            My duties also included training the club members and designing tennis programs that were tailored to my different types of clients and their work schedules, while supervising and monitoring their growth and improvements.
-                                        </p>
-                                    </el-col>
-                                    <el-col :xs="24" :span="12">
-                                        <p>
-                                            Currently, I train the ball hitters for national tournaments, while still actively playing in tournaments as well.  Recently, I played in the CBN senior tournament held in Abuja as well as the Rainoil Tennis Nationals while also coaching the LUIK team in last year’s NCC league senior tournament.
-
-                                            I'm a national player who loves to teach and train others to not only become world class Tennis players but also build their passion for this sport. I am on a mission to contribute to the growth of tennis, be a productive team player and share my passion for the game through coaching and mentoring others interested.
-                                        </p>
-                                    </el-col>
-                                </el-row>
-                            </el-col>
-                        </el-row>
-                    </el-col>
-                    <el-col :span="8" class="ib-introduction-sm">
-                        <el-image
-                                src="img/ib.jpg"
-                                fit="contain">
-                        </el-image>
-                    </el-col>
-                </el-row>
-                <!-- <el-row>
-                    <el-col :span="16">
-                        <el-row type="flex" align="center" justify="center">
-                            <el-col :span="18">
-                                <h4 class="el-section-title">Photo Gallery</h4>
-                            </el-col>
-                        </el-row>
-
-                    </el-col>
-                </el-row> -->
-                <el-row class="el-experience">
-                    <el-col :span="24">
-                        <el-row type="flex" align="center" justify="center">
-                            <el-col :span="20">
-                                <h4 class="el-section-title el-experience-section-title">About Me</h4>
-                            </el-col>
-                        </el-row>
-
-                        <el-row type="flex" align="center" justify="center">
-                            <el-col :span="20">
-                                <el-row>
-                                    <el-col :xs="24" :span="8">
-                                        <div class="el-experience-item">
-                                            <h6 class="el-experience-title">Bio Data</h6>
-                                            <dl class="el-experience-details el-experience-details__one">
-                                                <dt>Gender:</dt>
-                                                <dd>Male</dd>
-                                                <dt>Date of Birth:</dt>
-                                                <dd>4th May</dd>
-                                                <dt>Marital Status:</dt>
-                                                <dd>Married</dd>
-                                                <dt>State of Origin:</dt>
-                                                <dd>Lagos State</dd>
-                                                <dt>Resident:</dt>
-                                                <dd>Nigeria</dd>
-                                                <dt>Nationality:</dt>
-                                                <dd>Nigerian</dd>
-                                            </dl>
-                                        </div>
-                                        <div class="el-experience-item">
-                                            <h6 class="el-experience-title">Skills</h6>
-                                            <ul class="el-experience-list">
-                                                <li>Play ’n Stay (Mini T)</li>
-                                                <li>School Tennis Initiative (STI)</li>
-                                                <li>High Performance Tennis Training</li>
-                                                <li>Recreational Players Training</li>
-                                            </ul>
-                                        </div>
-                                        <div class="el-experience-item">
-                                            <h6 class="el-experience-title">Travel Experience</h6>
-                                            <p>Turkey, Dubai, Ghana, Togo, Republic du Benin</p>
-                                        </div>
-                                    </el-col>
-                                    <el-col :xs="24" :span="12">
-                                        <div class="el-experience-item">
-                                            <h6 class="el-experience-title">Educational Qualification</h6>
-                                            <dl class="el-experience-details">
-                                                <dt>Army Children School, Obalende, Lagos (FSLC)</dt>
-                                                <dd>1992 - 1999</dd>
-                                                <dt>Ireti Grammar School, Ikoyi, Lagos (SSCE)</dt>
-                                                <dd>2006 - 2006</dd>
-                                            </dl>
-                                        </div>
-                                        <div class="el-experience-item">
-                                            <h6 class="el-experience-title">Certification</h6>
-                                            <dl class="el-experience-details">
-                                                <dt><sup>*</sup>Professionl Tennis Registry Adult development 2013 (PTR) coaching course</dt>
-                                                <dd>2013</dd>
-                                                <dt><sup>*</sup>Professional tennis coaches association of Nigeria workshop</dt>
-                                                <dd>2014</dd>
-                                                <dt><sup>*</sup>ITF worldwide coaches conference (Antalya, Turkey)</dt>
-                                                <dd>2015</dd>
-                                                <dt><sup>*</sup>ITF/NTF level 1 (2017) coaching course</dt>
-                                                <dd>2017</dd>
-                                                <dt><sup>*</sup>AJ Tennis academy workshop</dt>
-                                                <dd>2017</dd>
-                                                <dt><sup>*</sup>Professional Tennis Registry for 3 - 10 years old and 11 - 17 years ages (PTR) coaching course</dt>
-                                                <dd>2019</dd>
-                                                <dt><sup>*</sup>ITF worldwide coaches conference (Bangkok, Thailand)</dt>
-                                                <dd>2019</dd>
-                                                <dt><sup>*</sup>Professional Tennis Registry performance (Phuket, Thailand)</dt>
-                                                <dd>2019</dd>
-                                            </dl>
-                                        </div>
-                                    </el-col>
-                                </el-row>
-                            </el-col>
-                        </el-row>
-
-                        <hr>
-
-                        <el-row type="flex" align="center" justify="center">
-                            <el-col :span="20">
-                                <h4 class="el-section-title el-experience-section-title">Professional Experience</h4>
-                            </el-col>
-                        </el-row>
-
-                        <el-row type="flex" align="center" justify="center">
-                            <el-col :span="20">
-                                <el-row>
-                                    <el-col :xs="24" :span="10">
-                                        <div class="el-experience-item">
-                                            <h6 class="el-experience-title">Professional Membership</h6>
-                                            <dl class="el-experience-details">
-                                                <dt>- Professional Tennis Registry (U.S PTR)</dt>
-                                                <dd>2013 - 2014</dd>
-                                                <dt>- Professional Tennis Coaches Association of Nigeria (PTCAN)</dt>
-                                                <dd>2014</dd>
-                                                <dt>- Nigerian Tennis Federation (NTF) and International Tennis Federation (ITF)</dt>
-                                                <dd>2017</dd>
-                                                <dt>- Professional Tennis Registry (PTR)</dt>
-                                                <dd>2019</dd>
-                                            </dl>
-                                        </div>
-                                        <div class="el-experience-item">
-                                            <h6 class="el-experience-title">Professional Certificates</h6>
-                                            <dl class="el-experience-details">
-                                                <dt>- U.S PTR - Instructor (Adult Development), Nigeria</dt>
-                                                <dd>2013 - 2014</dd>
-                                                <dt>- PTR - Instructor (3 - 10), Nigeria</dt>
-                                                <dd>2014</dd>
-                                                <dt>- PTR - Instructor (11 - 17), Nigeria</dt>
-                                                <dd>2017</dd>
-                                                <dt>- ITF Worldwide Coaches Conference Antalya, Turkey</dt>
-                                                <dd>2019</dd>
-                                                <dt>- PTCAN Coaches Workshop, Nigeria</dt>
-                                                <dd>2019</dd>
-                                                <dt>- Better Africa through Tennis Workshop AJ Tennis Academy, Nigeria</dt>
-                                                <dd>2019</dd>
-                                            </dl>
-                                        </div>
-                                    </el-col>
-                                    <el-col :xs="24" :span="10" class="ib-tennis-balls">
-                                        <el-image
-                                                src="img/tennis-ball.png"
-                                                fit="contain">
-                                        </el-image>
-                                    </el-col>
-                                </el-row>
-                            </el-col>
-                        </el-row>
-                    </el-col>
-                </el-row>
-                <el-footer>
+<noscript>
+    <strong>We're sorry but Ibrahim Balogun's website doesn't work properly without JavaScript enabled. Please enable it
+        to continue.</strong>
+</noscript>
+<div id="app">
+    <el-container>
+        <el-header>
+            <el-row type="flex" align="center" justify="center">
+                <el-col :xs="22" :md="20">
                     <el-row type="flex" align="center" justify="center">
-                        <el-col :xs="12" :span="6" class="el-footer--brand">
+                        <el-col :span="12" class="el-header--brand">
                             <a href="/">
                                 <el-image
                                         src="img/ib.svg"
-                                        class="el-footer--brand--image"
+                                        class="el-header--brand--image"
                                         fit="contain">
                                 </el-image>
                             </a>
                         </el-col>
-                        <el-col :span="8" class="el-footer--cta hidden-xs-only">
+                        <el-col :span="12" class="el-header--cta">
+                            <span>Send me an email - &nbsp;</span>
                             <a href="mailto:me@ibrahimbalogun.com">me@ibrahimbalogun.com</a>
                         </el-col>
-                        <el-col :xs="12" :span="6" class="el-footer--social">
-                            <el-row type="flex" align="middle" justify="end">
-                                <el-col :span="24">
-                                    <h6>Connect with me</h6>
-                                    <ul class="el-footer--social-list">
-                                        <li><a href="/"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="/"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="/"><i class="fab fa-facebook"></i></a></li>
-                                    </ul>
+                    </el-row>
+                </el-col>
+            </el-row>
+        </el-header>
+        <el-main>
+            <el-carousel
+                    indicator-position="none"
+                    arrow="never"
+                    class="el-carousel-welcome"
+                    height="750px">
+                <el-carousel-item
+                        v-for="item in 1" :key="item">
+                    <el-row type="flex" align="center" justify="center">
+                        <el-col :xs="24" :span="20">
+                            <div class="el-carousel-text">
+                                <h1>Experienced Tennis Coach</h1>
+                                <p>I’m a Tennis coach passionate about this sport and ready to teach you to be a
+                                    professional tennis player or just teach you to play for fun!</p>
+                                <el-button type="white">Call Me <span class="el-carousel-text--btn__number">- +234 812 916 3673</span>
+                                </el-button>
+                            </div>
+                        </el-col>
+                    </el-row>
+                    <el-image
+                            src="img/bg.jpg"
+                            fit="contain">
+                    </el-image>
+                </el-carousel-item>
+            </el-carousel>
+            <el-row class="ib-schedule-meeting__container" type="flex" align="center" justify="center">
+                <el-col :xs="22" :span="20">
+                    <el-card class="ib-schedule-meeting">
+                        <el-row>
+                            <el-col :xs="24" :span="12">
+                                <h2>Prefer to schedule a meeting?</h2>
+                                <p>You can book a meeting with me, select a date and time that works for you.</p>
+                            </el-col>
+                            <el-col :xs="24" :span="12">
+                                <div class="ib-btn-container d-flex align-items-center justify-content-center justify-content-sm-start">
+                                    <el-icon class="el-icon-date"></el-icon>
+                                    <div>
+                                        <h5>Start Training Today!</h5>
+                                        <el-button type="primary">Schedule a meeting</el-button>
+                                    </div>
+                                </div>
+                            </el-col>
+                        </el-row>
+                    </el-card>
+                </el-col>
+            </el-row>
+            <el-row>
+                <el-col :xs="24" class="ib-introduction-xs">
+                    <el-image
+                            src="img/ib.jpg"
+                            fit="contain">
+                    </el-image>
+                </el-col>
+                <el-col :xs="24" :span="16">
+                    <el-row type="flex" align="center" justify="center">
+                        <el-col :span="18">
+                            <h4 class="el-about-title">Hello! I’m Ibrahim Babatunde Balogun, a Tennis Coach, sports
+                                lover and enthusiast.</h4>
+                        </el-col>
+                    </el-row>
+                    <el-row type="flex" align="center" justify="center">
+                        <el-col :span="18">
+                            <el-row :gutter="40">
+                                <el-col :xs="24" :span="12">
+                                    <p>
+                                        I found my passion for Tennis while working as a ballboy at the well-renowned
+                                        Ikoyi Club in Lagos state in 2003. By 2006 I had earned the award of Ball Boy
+                                        Champion.
+                                        <br>
+                                        In 2012, I Started working as a tennis coach in Greensprings school in Lagos
+                                        State after years of training as an athlete and coach. In 2017, I moved on to
+                                        the Lagos preparatory school in Ikoyi, Lagos state.
+                                        I joined the Luik Tennis and Recreation center as the Head coach, training any
+                                        level of age from 3years - 70years.
+                                        My duties also included training the club members and designing tennis programs
+                                        that were tailored to my different types of clients and their work schedules,
+                                        while supervising and monitoring their growth and improvements.
+                                    </p>
+                                </el-col>
+                                <el-col :xs="24" :span="12" class="d-none d-sm-block" ref="aboutMore">
+                                    <p>
+                                        Currently, I train the ball hitters for national tournaments, while still
+                                        actively playing in tournaments as well. Recently, I played in the CBN senior
+                                        tournament held in Abuja as well as the Rainoil Tennis Nationals while also
+                                        coaching the LUIK team in last year’s NCC league senior tournament.
+                                        I'm a national player who loves to teach and train others to not only become
+                                        world class Tennis players but also build their passion for this sport. I am on
+                                        a mission to contribute to the growth of tennis, be a productive team player and
+                                        share my passion for the game through coaching and mentoring others interested.
+                                    </p>
+                                </el-col>
+                                <el-col :xs="24" class="d-block d-sm-none">
+                                    <p class="d-block d-sm-none" @click="toggleAbout"><b><u id="readMore">Read More</u></b></p>
                                 </el-col>
                             </el-row>
                         </el-col>
                     </el-row>
-                </el-footer>
-            </el-main>
-        </el-container>
-    </div>
+                </el-col>
+                <el-col :span="8" class="ib-introduction-sm">
+                    <el-image
+                            src="img/ib.jpg"
+                            fit="contain">
+                    </el-image>
+                </el-col>
+            </el-row>
+            <!-- <el-row>
+                <el-col :span="16">
+                    <el-row type="flex" align="center" justify="center">
+                        <el-col :span="18">
+                            <h4 class="el-section-title">Photo Gallery</h4>
+                        </el-col>
+                    </el-row>
+                </el-col>
+            </el-row> -->
+            <el-row class="el-experience">
+                <el-col :span="24">
+                    <el-row type="flex" align="center" justify="center">
+                        <el-col :span="20">
+                            <h4 class="el-section-title el-experience-section-title">About Me</h4>
+                        </el-col>
+                    </el-row>
 
-    <!--js-->
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-    <script>
-        new Vue({
-          el: '#app',
-          data: function() {
-            return { visible: false }
-          }
-        })
-      </script>
-    <script src="js/script.js"></script>
+                    <el-row type="flex" align="center" justify="center">
+                        <el-col :span="20">
+                            <el-row>
+                                <el-col :xs="24" :span="8">
+                                    <div class="el-experience-item">
+                                        <h6 class="el-experience-title">Bio Data</h6>
+                                        <dl class="el-experience-details el-experience-details__one">
+                                            <dt>Gender:</dt>
+                                            <dd>Male</dd>
+                                            <dt>Date of Birth:</dt>
+                                            <dd>4th May</dd>
+                                            <dt>Marital Status:</dt>
+                                            <dd>Married</dd>
+                                            <dt>State of Origin:</dt>
+                                            <dd>Lagos State</dd>
+                                            <dt>Resident:</dt>
+                                            <dd>Nigeria</dd>
+                                            <dt>Nationality:</dt>
+                                            <dd>Nigerian</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="el-experience-item">
+                                        <h6 class="el-experience-title">Skills</h6>
+                                        <ul class="el-experience-list">
+                                            <li>Play ’n Stay (Mini T)</li>
+                                            <li>School Tennis Initiative (STI)</li>
+                                            <li>High Performance Tennis Training</li>
+                                            <li>Recreational Players Training</li>
+                                        </ul>
+                                    </div>
+                                    <div class="el-experience-item">
+                                        <h6 class="el-experience-title">Travel Experience</h6>
+                                        <p>Turkey, Dubai, Ghana, Togo, Republic du Benin, Thailand</p>
+                                    </div>
+                                </el-col>
+                                <el-col :xs="24" :span="12">
+                                    <div class="el-experience-item">
+                                        <h6 class="el-experience-title">Educational Qualification</h6>
+                                        <dl class="el-experience-details">
+                                            <dt>Army Children School, Obalende, Lagos (FSLC)</dt>
+                                            <dd>1992 - 1999</dd>
+                                            <dt>Ireti Grammar School, Ikoyi, Lagos (SSCE)</dt>
+                                            <dd>2006 - 2006</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="el-experience-item">
+                                        <h6 class="el-experience-title">Certification</h6>
+                                        <dl class="el-experience-details">
+                                            <dt><sup>*</sup>Professionl Tennis Registry Adult development 2013 (PTR)
+                                                coaching course
+                                            </dt>
+                                            <dd>2013</dd>
+                                            <dt><sup>*</sup>Professional tennis coaches association of Nigeria workshop
+                                            </dt>
+                                            <dd>2014</dd>
+                                            <dt><sup>*</sup>ITF worldwide coaches conference (Antalya, Turkey)</dt>
+                                            <dd>2015</dd>
+                                            <dt><sup>*</sup>ITF/NTF level 1 (2017) coaching course</dt>
+                                            <dd>2017</dd>
+                                            <dt><sup>*</sup>AJ Tennis academy workshop</dt>
+                                            <dd>2017</dd>
+                                            <dt><sup>*</sup>Professional Tennis Registry for 3 - 10 years old and 11 -
+                                                17 years ages (PTR) coaching course
+                                            </dt>
+                                            <dd>2019</dd>
+                                            <dt><sup>*</sup>ITF worldwide coaches conference (Bangkok, Thailand)</dt>
+                                            <dd>2019</dd>
+                                            <dt><sup>*</sup>Professional Tennis Registry performance (Phuket, Thailand)
+                                            </dt>
+                                            <dd>2019</dd>
+                                        </dl>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </el-col>
+                    </el-row>
+
+                    <hr>
+
+                    <el-row type="flex" align="center" justify="center">
+                        <el-col :span="20">
+                            <h4 class="el-section-title el-experience-section-title">Professional Experience</h4>
+                        </el-col>
+                    </el-row>
+
+                    <el-row type="flex" align="center" justify="center">
+                        <el-col :span="20">
+                            <el-row>
+                                <el-col :xs="24" :span="10">
+                                    <div class="el-experience-item">
+                                        <h6 class="el-experience-title">Professional Membership</h6>
+                                        <dl class="el-experience-details">
+                                            <dt>- Professional Tennis Registry (U.S PTR)</dt>
+                                            <dd>2013 - 2014</dd>
+                                            <dt>- Professional Tennis Coaches Association of Nigeria (PTCAN)</dt>
+                                            <dd>2014</dd>
+                                            <dt>- Nigerian Tennis Federation (NTF) and International Tennis Federation
+                                                (ITF)
+                                            </dt>
+                                            <dd>2017</dd>
+                                            <dt>- Professional Tennis Registry (PTR)</dt>
+                                            <dd>2019</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="el-experience-item">
+                                        <h6 class="el-experience-title">Professional Certificates</h6>
+                                        <dl class="el-experience-details">
+                                            <dt>- U.S PTR - Instructor (Adult Development), Nigeria</dt>
+                                            <dd>2013 - 2014</dd>
+                                            <dt>- PTR - Instructor (3 - 10), Nigeria</dt>
+                                            <dd>2014</dd>
+                                            <dt>- PTR - Instructor (11 - 17), Nigeria</dt>
+                                            <dd>2017</dd>
+                                            <dt>- ITF Worldwide Coaches Conference Antalya, Turkey</dt>
+                                            <dd>2019</dd>
+                                            <dt>- PTCAN Coaches Workshop, Nigeria</dt>
+                                            <dd>2019</dd>
+                                            <dt>- Better Africa through Tennis Workshop AJ Tennis Academy, Nigeria</dt>
+                                            <dd>2019</dd>
+                                        </dl>
+                                    </div>
+                                </el-col>
+                                <el-col :xs="24" :span="10" class="ib-tennis-balls">
+                                    <el-image
+                                            src="img/tennis-ball.png"
+                                            fit="contain">
+                                    </el-image>
+                                </el-col>
+                            </el-row>
+                        </el-col>
+                    </el-row>
+                </el-col>
+            </el-row>
+            <el-footer>
+                <el-row type="flex" align="center" justify="center">
+                    <el-col :xs="12" :span="6" class="el-footer--brand">
+                        <a href="/">
+                            <el-image
+                                    src="img/ib.svg"
+                                    class="el-footer--brand--image"
+                                    fit="contain">
+                            </el-image>
+                        </a>
+                    </el-col>
+                    <el-col :span="8" class="el-footer--cta hidden-xs-only">
+                        <a href="mailto:me@ibrahimbalogun.com">me@ibrahimbalogun.com</a>
+                    </el-col>
+                    <el-col :xs="12" :span="6" class="el-footer--social">
+                        <el-row type="flex" align="middle" justify="end">
+                            <el-col :span="24">
+                                <h6>Connect with me</h6>
+                                <ul class="el-footer--social-list">
+                                    <li><a href="/"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="/"><i class="fab fa-facebook"></i></a></li>
+                                </ul>
+                            </el-col>
+                        </el-row>
+                    </el-col>
+                </el-row>
+            </el-footer>
+        </el-main>
+    </el-container>
+</div>
+
+<!--js-->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function () {
+      return {visible: false}
+    },
+    methods: {
+      toggleAbout() {
+        if (this.$refs.aboutMore.$el.classList.contains('d-none')) {
+          this.$refs.aboutMore.$el.classList.remove('d-none');
+          document.getElementById('readMore').innerHTML = 'Show Less';
+        } else {
+          this.$refs.aboutMore.$el.classList.add('d-none');
+          document.getElementById('readMore').innerHTML = 'Read More';
+        }
+      }
+    }
+  })
+</script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
